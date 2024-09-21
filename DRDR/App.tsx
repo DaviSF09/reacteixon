@@ -3,20 +3,20 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.geral}>
-      <View style={styles.tipo1}>
+    <View style={styles.pai}>
+      <View style={[styles.geral,styles.vermelho]}>
         <Text>
             Reversão de Feitiço: Vermelho
         </Text>
       </View>
 
-      <View style={styles.tipo2}>
+      <View style={[styles.geral,styles.roxo]}>
         <Text>
             Juntando os dois, é possível criar a Técnica Imaginária: "Vazio Roxo"🫴
         </Text>
       </View>
 
-      <View style={styles.tipo3}>
+      <View style={[styles.geral,styles.azul]}>
         <Text>
             Lapso de Feitiço: Azul
         </Text>
@@ -25,40 +25,21 @@ export default function App() {
   )}
 
 const styles= StyleSheet.create({
-  geral:{
+  pai:{
     flex:1,
     justifyContent:"center",
     alignItems:"center",
     backgroundColor:"#362040",
   },
-  tipo1:{
-    flex:0,
-    width:150,
-    height:150,
+  geral:{
+    width: 200,
+    height: 200,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fc0303",
     borderRadius: 100,
-    margin:20
+    margin:20,
   },
-  tipo2:{
-    flex:0,
-    width:200,
-    height:200,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#7932a8",
-    borderRadius: 100,
-    margin:20
-  },
-  tipo3:{
-    flex:0,
-    width:150,
-    height:150,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#0238fa",
-    borderRadius: 100,
-    margin:20
-  }
+  vermelho:{backgroundColor: "red"},
+  roxo:{backgroundColor: "#7932a8"},
+  azul:{backgroundColor: "#0238fa"}
 })
