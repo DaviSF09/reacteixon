@@ -12,7 +12,7 @@ export default function App() {
 
       <View style={[styles.geral,styles.roxo]}>
         <Text>
-            Juntando os dois, é possível criar a Técnica Imaginária: "Vazio Roxo"🫴
+            Juntando os dois, é possível criar a Técnica Imaginária: "Vazio Roxo BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOMM"🫴
         </Text>
       </View>
 
